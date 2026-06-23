@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Kurapati Hruthik</title>
+  <meta name="description"
+    content="Learn more about Kurapati Hruthik - academic background, technical skills, areas of interest, and language proficiencies.">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom Style -->
+  <link href="css/style.css?v=2" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Three.js Canvas Backdrop -->
+  <div id="three-canvas"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Kurapati Hruthik</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" id="nav-home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" id="nav-about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html" id="nav-projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" id="nav-contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admin.html" id="nav-admin">Admin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Me Page Content -->
+  <main class="container py-5" style="position: relative; z-index: 2;">
+
+    <!-- Title -->
+    <div class="text-center mb-5">
+      <h1 class="display-4 fw-bold text-gradient">About Me</h1>
+      <p class="text-muted">My background, capabilities, and interest sectors</p>
+      <div style="width: 60px; height: 3px; background: var(--accent-blue); margin: 1rem auto 0;"></div>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Left Column: Biography & Education -->
+      <div class="col-lg-6">
+        <!-- Biography glass card -->
+        <div class="glass-panel p-4 mb-4" style="border-top: 3px solid var(--accent-blue);">
+          <h2 class="h4 about-heading mb-3"><i class="bi bi-person-fill me-2"></i>Profile</h2>
+          <p class="mb-0" style="line-height: 1.8; text-align: justify;">
+            I am an enthusiastic Computer Science and Engineering student with a strong academic foundation and a
+            passion for building innovative software solutions. I have a keen interest in web development, software
+            engineering, and emerging technologies. I enjoy applying my skills to develop efficient and user-friendly applications.
+          </p>
+        </div>
+
+        <!-- Education Card -->
+        <div class="glass-panel p-4 mb-4" style="border-top: 3px solid var(--accent-purple);">
+          <h2 class="h4 about-heading mb-3"><i class="bi bi-mortarboard-fill me-2"></i>Education</h2>
+          <div class="border-start border-info ps-3 ms-2 my-2">
+            <h3 class="h5 mb-1 text-light">Bachelor of Technology (B.Tech)</h3>
+            <p class="text-info mb-1" style="font-size: 0.95rem;">Computer Science and Engineering</p>
+            <p class="text-muted mb-2 small fw-semibold">Velagapudi Ramakrishna Siddhartha Engineering College</p>
+            <div class="d-flex align-items-center">
+              <span class="badge bg-info text-dark px-2.5 py-1.5 fw-bold"
+                style="font-family: 'Orbitron', sans-serif;">CGPA: 8.74</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages & Interests Column -->
+        <div class="row g-4">
+          <!-- Languages -->
+          <div class="col-md-6">
+            <div class="glass-panel p-4 h-100" style="border-left: 3px solid var(--accent-blue);">
+              <h2 class="h5 about-heading mb-3"><i class="bi bi-translate me-2"></i>Languages</h2>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><i class="bi bi-chevron-right text-info me-2"></i>English</li>
+                <li class="mb-2"><i class="bi bi-chevron-right text-info me-2"></i>Telugu</li>
+                <li class="mb-0"><i class="bi bi-chevron-right text-info me-2"></i>Tamil</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Interests -->
+          <div class="col-md-6">
+            <div class="glass-panel p-4 h-100" style="border-left: 3px solid var(--accent-purple);">
+              <h2 class="h5 about-heading mb-3"><i class="bi bi-heart-fill text-danger me-2"></i>Interests</h2>
+              <div class="d-flex flex-wrap gap-2">
+
+                <span class="badge badge-blue">Web Development</span>
+                <span class="badge badge-purple">Full-Stack</span>
+                <span class="badge badge-blue">DBMS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive Skills Module -->
+      <div class="col-lg-6">
+        <div class="glass-panel p-4 h-100">
+          <h2 class="h4 text-info mb-4"><i class="bi bi-sliders me-2"></i>Technical Capabilities</h2>
+
+          <!-- Category selection buttons -->
+          <div class="d-flex flex-wrap gap-2 mb-4" id="skill-categories">
+            <button class="btn btn-sm btn-outline-info active" onclick="filterSkills('all')">All</button>
+            <button class="btn btn-sm btn-outline-info"
+              onclick="filterSkills('Programming Languages')">Programming</button>
+            <button class="btn btn-sm btn-outline-info" onclick="filterSkills('Web Technologies')">Web</button>
+            <button class="btn btn-sm btn-outline-info"
+              onclick="filterSkills('Database Technologies')">Databases</button>
+          </div>
+
+          <!-- Dynamic Skills Container -->
+          <div id="skills-list" class="d-flex flex-column gap-3">
+            <!-- Programmatically injected -->
+          </div>
+
+          <!-- Tools and platforms static segment to add value -->
+          <div class="mt-4 pt-4 border-top border-secondary">
+            <h3 class="h6 text-uppercase text-info mb-3">Tools & Platforms</h3>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge bg-dark border border-info text-info p-2"><i class="bi bi-git me-1"></i> Git</span>
+              <span class="badge bg-dark border border-info text-info p-2"><i class="bi bi-github me-1"></i>
+                GitHub</span>
+              <span class="badge bg-dark border border-info text-info p-2"><i class="bi bi-code-square me-1"></i> VS
+                Code</span>
+              <span class="badge bg-dark border border-info text-info p-2"><i class="bi bi-android2 me-1"></i> Android
+                Studio</span>
+              <span class="badge bg-dark border border-info text-info p-2"><i class="bi bi-diagram-3 me-1"></i> Packet
+                Tracer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-muted">
+    <div class="container">
+      <p class="mb-0 small">&copy; 2026 Kurapati Hruthik</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    // Load skills from local storage (or defaults) and display them
+    let currentFilter = 'all';
+
+    function displaySkills() {
+      const skills = getSkills();
+      const container = document.getElementById('skills-list');
+      if (!container) return;
+
+      container.innerHTML = '';
+
+      const filtered = skills.filter(skill => {
+        return currentFilter === 'all' || skill.category === currentFilter;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = '<p class="text-muted text-center py-3">No skills configured in this category.</p>';
+        return;
+      }
+
+      filtered.forEach(skill => {
+        const item = document.createElement('div');
+        item.className = 'skill-card';
+        item.innerHTML = `
+          <div class="d-flex justify-content-between mb-1">
+            <span class="text-light fw-medium">${skill.name}</span>
+            <span class="text-info small fw-bold">${skill.percentage}%</span>
+          </div>
+          <div class="skill-bar-container">
+            <div class="skill-bar-fill" id="bar-${skill.id}" style="width: 0%"></div>
+          </div>
+        `;
+        container.appendChild(item);
+
+        // Slide in animation delay to look sleek
+        setTimeout(() => {
+          const fill = document.getElementById(`bar-${skill.id}`);
+          if (fill) fill.style.width = skill.percentage + '%';
+        }, 100);
+      });
+    }
+
+    function filterSkills(category) {
+      currentFilter = category;
+
+      // Update active state in filters
+      const buttons = document.querySelectorAll('#skill-categories button');
+      buttons.forEach(btn => {
+        if (btn.getAttribute('onclick').includes(category)) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+
+      displaySkills();
+    }
+
+    // Initialize display on load
+    document.addEventListener('DOMContentLoaded', () => {
+      displaySkills();
+    });
+  </script>
+</body>
+
+</html>
